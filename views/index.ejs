@@ -79,7 +79,11 @@
    <h3>Register your Trade with Udyog Aadhaar!</h3>
   </div>
 
-  <form action="/Submit" method="POST" enctype="multipart/form-data" name="myForm" id="myForm">
+  <input value="Upload with Cloudinary Widget" class="btn btn-primary btn-block" id="upload_widget_opener_Adh">
+
+  <input value="Upload with Cloudinary Widget" class="btn btn-primary btn-block" id="upload_widget_opener_Pan">
+
+  <form action="/Submit" method="POST">
    <div class="form">
 
     <label for="aadhaarCardName" class="label">Your Name on Aadhaar Card/ आवेदक का नाम:</label>
@@ -168,21 +172,31 @@
 
 
     <label for="aadhaarFile" class="label">Upload your Aadhaar Card:</label>
-    <input type="file" name="aadhaarFile" class="input" accept=".jpg, .pdf">
+    <!-- <input type="file" name="aadhaarFile" class="input" accept=".jpg, .pdf"> -->
+
 
 
     <label for="panFile" class="label">Upload your Pancard:</label>
-    <input type="file" id="pan-File" name="panFile" class="input" accept=".jpg, .pdf">
+    <!-- <input type="file" id="pan-File" name="panFile" class="input" accept=".jpg, .pdf"> -->
 
    </div>
 
    <%= typeof msg != 'undefined' ? msg : '' %>
 
+
    <input type="reset" value="Clear" class="btn btn-primary ">
    <input type="submit" value="Submit" class="btn btn-primary ">
+
+
   </form>
 
  </div>
+
+ <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript">
+ </script>
+
+
+ <script src="/script.js"> </script>
 </body>
 
 </html>
